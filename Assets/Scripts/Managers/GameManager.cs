@@ -135,11 +135,11 @@ public class GameManager : MonoBehaviour
 
         if(m_GameWinner != null)
         {
-            if (m_RoundWinner.m_PlayerNumber == 1)
+            if (m_GameWinner.m_PlayerNumber == 1)
             {
                 PlayerPrefs.SetString("last_winner", "Rojo");
             }
-            else if (m_RoundWinner.m_PlayerNumber == 2)
+            else if (m_GameWinner.m_PlayerNumber == 2)
             {
                 PlayerPrefs.SetString("last_winner", "Azul");
             }
